@@ -7,7 +7,7 @@
 
 #include "dvi_serialiser.h"
 
-DVI_DEFAULT_SERIAL_CONFIG rp2040_pizero_cfg
+#define DVI_DEFAULT_SERIAL_CONFIG rp2040_pizero_cfg
 #ifndef DVI_DEFAULT_SERIAL_CONFIG
 #define DVI_DEFAULT_SERIAL_CONFIG pico_sock_cfg
 #endif

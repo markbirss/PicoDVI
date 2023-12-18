@@ -89,13 +89,14 @@ static const struct dvi_serialiser_cfg not_hdmi_featherwing_cfg = {
 	.invert_diffpairs = true
 };
 
-// RP2040-PiZero
+// Waveshare RP2040-PiZero
 static const struct dvi_serialiser_cfg rp2040_pizero_cfg = {
-	.pio = pio0,
-	.sm_tmds = {0, 1, 2},
-	.pins_tmds = {22, 24, 26},
-	.pins_clk = 28,
-	.invert_diffpairs = true
+        .pio = pio0,
+        .sm_tmds = {0, 1, 2},
+        .pins_tmds = {26, 24, 22},
+        .pins_clk = 28,
+        .invert_diffpairs = false
 };
+
 
 #endif
